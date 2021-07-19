@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SKynet-bit</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#band">Topics</a></li>
+            <li><a href="#tour">Discussion</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >MORE
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Merchandise</a></li>
+                <li><a href="#">Extras</a></li>
+                <li><a href="#">Media</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span class="glyphicon glyphicon-search"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Banner-->
+
+    <header>
+      <div class="overlay"></div>
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src="/static/Test_video.mov" type="video/mp4" />
+      </video>
+    </header>
+
+    <!--Body-->
+
+    <div id="bodyContainer" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-7">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="img-cont">
+                        <img src="/static/answer.png" />
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <h3>Still not found what you are looking for?</h3>
+                    </div>
+                    <div class="col-sm-3">
+                      <button
+                        id="seachFoundBtn"
+                        type="button"
+                        class="btn btn-info btn-block Absolute-Center"
+                      >
+                        Click Here
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+              <div class="col-sm-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h4>Forum</h4>
+                      </div>
+                      <div class="col-sm-3">
+                        <h4>Topics/Posts</h4>
+                        
+                      </div>
+                      <div class="col-sm-3"><h4>Last Post</h4></div>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="col-sm-2 glyphCont">
+                       <a href="#" class="btn btn-success btn-lg">
+      <span class="glyphicon glyphicon-print"></span> 
+    </a>
+                    </div>
+                    <div class="col-sm-4 topicDesc">
+                      <p>Topics</p>
+                      
+                    </div>
+                    <div class="col-sm-3 topicStat">7/27</div>
+                    <div class="col-sm-3 lastPost">20-07-21</div>
+                  </div>
+
+                  <div class="panel-body">
+                    <div class="col-sm-2 glyphCont">
+                       <a href="#" class="btn btn-info btn-lg">
+      <span class="glyphicon glyphicon-globe"></span> 
+    </a>
+                    </div>
+                    <div class="col-sm-4 topicDesc">
+                      <p>Topics</p>
+                    </div>
+                    <div class="col-sm-3 topicStat">7/27</div>
+                    <div class="col-sm-3 lastPost">20-07-21</div>
+                  </div>
+                 
+                  <div class="panel-body">
+                    <div class="col-sm-2 glyphCont">
+                       <a href="#" class="btn btn-danger btn-lg">
+      <span class="glyphicon glyphicon-phone"></span> 
+    </a>
+                    </div>
+                    <div class="col-sm-4 topicDesc">
+                      <p>Topics</p>
+                    </div>
+                    <div class="col-sm-3 topicStat">7/27</div>
+                    <div class="col-sm-3 lastPost">20-07-21</div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="col-sm-2 glyphCont">
+                       <a href="#" class="btn btn-warning btn-lg">
+      <span class="glyphicon glyphicon-tasks"></span> 
+    </a>
+                    </div>
+                    <div class="col-sm-4 topicDesc">
+                      <p>Topics</p>
+                    </div>
+                    <div class="col-sm-3 topicStat">7/27</div>
+                    <div class="col-sm-3 lastPost">20-07-21</div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="col-sm-2 glyphCont">
+                       <a href="#" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-cd"></span> 
+    </a>
+                    </div>
+                    <div class="col-sm-4 topicDesc">
+                      <p>Topics</p>
+                    </div>
+                    <div class="col-sm-3 topicStat">7/27</div>
+                    <div class="col-sm-3 lastPost">20-07-21</div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="col-sm-2 glyphCont">
+                       <a href="#" class="btn btn-primary btn-lg">
+      <span class="glyphicon glyphicon-qrcode"></span> 
+    </a>
+                    </div>
+                    <div class="col-sm-4 topicDesc">
+                      <p>Topics</p>
+                    </div>
+                    <div class="col-sm-3 topicStat">7/27</div>
+                    <div class="col-sm-3 lastPost">20-07-21</div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="col-sm-2 glyphCont">
+                       <a href="#" class="btn btn-danger btn-lg">
+      <span class="glyphicon glyphicon-inbox"></span> 
+    </a>
+                    </div>
+                    <div class="col-sm-4 topicDesc">
+                      <p>Topics</p>
+                    </div>
+                    <div class="col-sm-3 topicStat">7/27</div>
+                    <div class="col-sm-3 lastPost">20-07-21</div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="col-sm-2 glyphCont">
+                       <a href="#" class="btn btn-info btn-lg">
+      <span class="glyphicon glyphicon-road"></span> 
+    </a>
+                    </div>
+                    <div class="col-sm-4 topicDesc">
+                      <p>Topics</p>
+                    </div>
+                    <div class="col-sm-3 topicStat">7/27</div>
+                    <div class="col-sm-3 lastPost">20-07-21</div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="col-sm-2 glyphCont">
+                       <a href="#" class="btn btn-warning btn-lg">
+      <span class="glyphicon glyphicon-lock"></span> 
+    </a>
+                    </div>
+                    <div class="col-sm-4 topicDesc">
+                      <p>Topics</p>
+                    </div>
+                    <div class="col-sm-3 topicStat">7/27</div>
+                    <div class="col-sm-3 lastPost">20-07-21</div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="col-sm-2 glyphCont">
+                       <a href="#" class="btn btn-danger btn-lg">
+      <span class="glyphicon glyphicon-education"></span> 
+    </a>
+                    </div>
+                    <div class="col-sm-4 topicDesc">
+                      <p>Topics</p>
+                    </div>
+                    <div class="col-sm-3 topicStat">7/27</div>
+                    <div class="col-sm-3 lastPost">20-07-21</div>
+                  </div>
+                </div>
+              </div>
+           
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="container-fluid">
+            <h2>Forum Topics</h2>
+            <div class="list-group">
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <h2>Discussion</h2>
+            <div class="list-group">
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+              <a href="#" class="list-group-item">Topics<span class="badge">12</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-2 text-center" id="midFooter">
+      <h3>What Am I?</h3>
+      <p>Lorem ipsum..</p>
+      <a href="#" class="btn btn-default btn-lg">Search</a>
+    </div>
+    <footer class="container-fluid bg-4 text-center">
+      <p>By-skynet-bit</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
