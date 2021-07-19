@@ -1,0 +1,1 @@
+# forumplugin_nojs
